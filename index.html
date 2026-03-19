@@ -1,0 +1,728 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>המקפצה | אסטרטגיה לאומית לתעסוקה בעידן החדש</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#hero" class="nav-logo">המקפצה</a>
+            <div class="nav-links" id="navLinks">
+                <a href="#problem" class="nav-link">הבעיה</a>
+                <a href="#context" class="nav-link">הקשר הלאומי</a>
+                <a href="#solution" class="nav-link">הפתרון</a>
+                <a href="#channel1" class="nav-link">מסלול א׳</a>
+                <a href="#channel2" class="nav-link">מסלול ב׳</a>
+                <a href="#channel3" class="nav-link">מסלול ג׳</a>
+                <a href="#budget" class="nav-link">תקציב</a>
+                <a href="#timeline" class="nav-link">לו״ז</a>
+                <a href="#cta" class="nav-link">החלטות</a>
+            </div>
+            <button class="nav-pdf" id="printBtn" title="הדפסה / שמירה כ-PDF">
+                <i class="fas fa-file-pdf"></i>
+                <span>PDF</span>
+            </button>
+            <button class="nav-toggle" id="navToggle" aria-label="תפריט">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Loading Screen -->
+    <div class="loading-screen" id="loadingScreen">
+        <div class="loading-content">
+            <div class="loading-logo">המקפצה</div>
+            <div class="loading-bar"><div class="loading-progress"></div></div>
+            <p class="loading-text">אסטרטגיה לאומית לתעסוקה בעידן החדש</p>
+            <p class="loading-subtitle">מדינת ישראל | פיילוט מדיניות לאומי</p>
+        </div>
+    </div>
+
+    <!-- Hero -->
+    <section class="hero" id="hero">
+        <div class="hero-particles" id="particles"></div>
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <div class="hero-official">מדינת ישראל</div>
+            <div class="hero-badge"><i class="fas fa-landmark"></i> מסמך ייזום מדיניות | מוגש לוועדת ההיגוי | מרץ 2026</div>
+            <h1 class="hero-title">
+                <span class="title-line">המקפצה</span>
+                <span class="title-accent">The Springboard</span>
+            </h1>
+            <p class="hero-description">
+                אסטרטגיה לאומית לניהול תעסוקה בעידן החדש —<br>
+                פתרון תלת-זרועי לאתגר התעסוקה
+            </p>
+            <div class="hero-stats-row">
+                <div class="hero-stat">
+                    <span class="hero-stat-number" data-target="3">0</span>
+                    <span class="hero-stat-label">מסלולי פיילוט</span>
+                </div>
+                <div class="hero-stat-divider"></div>
+                <div class="hero-stat">
+                    <span class="hero-stat-number" data-target="425">0</span>
+                    <span class="hero-stat-label">משתתפים בפיילוט</span>
+                </div>
+                <div class="hero-stat-divider"></div>
+                <div class="hero-stat">
+                    <span class="hero-stat-number" data-target="10">0</span>
+                    <span class="hero-stat-label">מיליון ₪ תקציב</span>
+                </div>
+            </div>
+            <a href="#problem" class="scroll-indicator">
+                <span>גלו את הסיפור</span>
+                <i class="fas fa-chevron-down"></i>
+            </a>
+        </div>
+    </section>
+
+    <!-- The Problem: Double Market Failure -->
+    <section class="story-section" id="problem">
+        <div class="section-container">
+            <div class="section-label">כשל השוק הכפול</div>
+            <h2 class="section-title">העלות הנסתרת למדינה</h2>
+            <div class="story-grid">
+                <div class="story-text">
+                    <p class="story-lead">
+                        המדינה מממנת בו-זמנית: דמי אבטלה פסיביים לנשים שהונן האנושי נשחק,
+                        ושירותים חברתיים משותקים ממחסור בכוח אדם.
+                        התוצאה: הוצאה כפולה ללא תפוקה — Deadweight Loss.
+                    </p>
+                    <div class="problem-stats">
+                        <div class="problem-stat">
+                            <span class="problem-number">700K</span>
+                            <span class="problem-label">נשים בסיכון עקירה<br>מ-AI במנהלה ושירות</span>
+                        </div>
+                        <div class="problem-stat">
+                            <span class="problem-number">60-70%</span>
+                            <span class="problem-label">מזמן עו"ס ופרה-רפואיים<br>מבוזבז על בירוקרטיה</span>
+                        </div>
+                        <div class="problem-stat">
+                            <span class="problem-number">54%</span>
+                            <span class="problem-label">שיעור תעסוקת גברים<br>חרדים — קפוא, בשכר נמוך</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="story-visual">
+                    <div class="visual-card problem-card">
+                        <i class="fas fa-hourglass-half"></i>
+                        <h3>חלון קריטי</h3>
+                        <p>חודשים 1-4 לאבטלה: התערבות פעילה בחלון זה מונעת שחיקת הון אנושי בלתי הפיכה ו"קנס שכר" קבוע לכל החיים</p>
+                        <small>מחקר אמפירי מגרמניה ודנמרק</small>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- National Context: War, Tech Gap, Regulatory Gap, Wage Gaps -->
+    <section class="context-section" id="context">
+        <div class="section-container">
+            <div class="section-label">הקשר הלאומי</div>
+            <h2 class="section-title">ישראל 2026: שלושה כוחות שמתכנסים</h2>
+            <p class="section-subtitle">
+                המקפצה אינה נולדת בוואקום. שלושה משברים בו-זמניים מחייבים תגובת מדיניות מהירה, חכמה ומובנית.
+            </p>
+            <div class="context-grid">
+
+                <!-- War Impact -->
+                <div class="context-card context-war reveal">
+                    <div class="context-card-icon"><i class="fas fa-shield-alt"></i></div>
+                    <h3>השלכות המלחמה על שוק העבודה</h3>
+                    <p>המלחמה גרמה לזעזוע כלכלי חריג: גל פיטורים בענפי שירות, מסחר ותיירות; עובדים שהוצאו לחל"ת והפכו למובטלים לטווח ארוך; ועלייה חדה בעומס על רשת הביטחון הסוציאלית. בד בבד — מחסור חמור בכוח אדם בשירותים חיוניים. שני כשלים שמחייבים פתרון משולב אחד.</p>
+                    <div class="context-stats">
+                        <div class="context-stat">
+                            <span class="context-stat-num">↑40%</span>
+                            <span class="context-stat-lbl">עלייה בפניות לדמי אבטלה מאז אוקטובר 2023</span>
+                        </div>
+                        <div class="context-stat">
+                            <span class="context-stat-num">↓8%</span>
+                            <span class="context-stat-lbl">ירידה בתפוקה בענפי השירות והמסחר</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tech Gap -->
+                <div class="context-card context-tech reveal">
+                    <div class="context-card-icon"><i class="fas fa-microchip"></i></div>
+                    <h3>הפער הטכנולוגי: AI מואץ מהצפוי</h3>
+                    <p>הבינה המלאכותית מחוללת מהפכה בקצב שעולה על כל תחזית. מקצועות שנחשבו "בטוחים" נמצאים בסיכון ממשי — וההכשרות המסורתיות אינן עונות על קצב השינוי. הפער בין המיומנויות הנדרשות בשוק לבין המיומנויות הקיימות אצל העובדים מתרחב בכל חודש שעובר ללא פעולה.</p>
+                    <div class="context-stats">
+                        <div class="context-stat">
+                            <span class="context-stat-num">700K</span>
+                            <span class="context-stat-lbl">משרות בסיכון אוטומציה — רובן נשים</span>
+                        </div>
+                        <div class="context-stat">
+                            <span class="context-stat-num">×3</span>
+                            <span class="context-stat-lbl">קצב החלפת כלים טכנולוגיים בשוק — מדי שנה</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Regulatory Gap - FEATURED -->
+                <div class="context-card context-regulation context-featured reveal">
+                    <div class="context-featured-badge"><i class="fas fa-exclamation"></i> אתגר מרכזי</div>
+                    <div class="context-card-icon"><i class="fas fa-balance-scale"></i></div>
+                    <h3>הפער הרגולטורי: מערכת של אמש בעולם של מחר</h3>
+                    <p>זהו האתגר המבני העמוק ביותר. הרגולציה הקיימת נבנתה לעולם של עבודה קבועה ולינארית — ביטוח לאומי ושירות התעסוקה פועלים לפי מנגנונים שנבנו לפני עשרות שנים. אין מסגרת גמישה לניהול מעבר בין תעסוקות, ואין כלים לתגובה מהירה לאתגרים חברתיים משתנים. <strong>בלי שינוי רגולטורי — שום פתרון טכנולוגי לא יתגשם בשטח.</strong></p>
+                    <div class="regulation-needed">
+                        <h4><i class="fas fa-tools"></i> מה נדרש: רגולציה גמישה שמאפשרת מענה חכם ומהיר</h4>
+                        <ul class="regulation-list">
+                            <li><i class="fas fa-check-circle"></i><div><strong>המרת קצבאות למענקי עבודה</strong> — ללא תיקון חקיקה מסורבל וארוך</div></li>
+                            <li><i class="fas fa-check-circle"></i><div><strong>ארנקים דיגיטליים ממשלתיים</strong> — מנגנון ווקאוצ'ר גמיש ואישי</div></li>
+                            <li><i class="fas fa-check-circle"></i><div><strong>GO/NO-GO מהיר על בסיס נתונים</strong> — קבלת החלטות ב-6 חודשים, לא 6 שנים</div></li>
+                            <li><i class="fas fa-check-circle"></i><div><strong>מדידה ואחריותיות בזמן אמת</strong> — מעקב תוצאות ולא רק תהליכים</div></li>
+                            <li><i class="fas fa-check-circle"></i><div><strong>גמישות לצרכי שוק משתנים</strong> — מנגנון עדכון מהיר לאתגרים חדשים שיגיעו</div></li>
+                            <li><i class="fas fa-check-circle"></i><div><strong>שיתוף פעולה בין-משרדי</strong> — פרוטוקול מהיר שחוצה סילואים ממשלתיים</div></li>
+                        </ul>
+                    </div>
+                    <div class="context-quote">
+                        "הפיילוט הוא גם תבחין רגולטורי: האם ישראל יכולה לפעול מהר מספיק כדי להישאר רלוונטית לאתגרים החברתיים המשתנים של עידן ה-AI?"
+                    </div>
+                </div>
+
+                <!-- Wage Gaps -->
+                <div class="context-card context-wages reveal">
+                    <div class="context-card-icon"><i class="fas fa-chart-line"></i></div>
+                    <h3>פערי השכר הצפויים: עלות ההמתנה</h3>
+                    <p>מחקרים בינלאומיים מוכיחים: עובדים שנפלטים ממשרות שנוחלפו על ידי AI סובלים מ"קנס שכר" מתמשך — ירידה של 20-40% בשכר בשנה הראשונה, שהופכת לפגיעה מצטברת לאורך שנים. ללא התערבות: הפסד שכר מצטבר של מאות אלפי שקלים לכל עובד. <strong>התערבות מוקדמת בחלון 1-4 חודשים היא ההבדל בין שיקום לנשירה.</strong></p>
+                    <div class="context-stats">
+                        <div class="context-stat">
+                            <span class="context-stat-num wages-num">20-40%</span>
+                            <span class="context-stat-lbl">ירידת שכר ממוצעת ללא התערבות</span>
+                        </div>
+                        <div class="context-stat">
+                            <span class="context-stat-num wages-num">1-4</span>
+                            <span class="context-stat-lbl">חלון ההזדמנות בחודשים — לפני שהפגיעה הופכת קבועה</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Bottom line -->
+            <div class="context-bottom-line reveal">
+                <i class="fas fa-arrow-circle-right"></i>
+                <p>שלושת הכוחות מחייבים מענה אחד משולב: <strong>פיילוט מדיניות שמשנה את כללי המשחק הרגולטוריים ומוכיח שישראל יכולה לפעול מהר, חכם ומדיד — כדי להגיע מוכנה לאתגרים שבדרך.</strong></p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Solution Overview -->
+    <section class="solution-section" id="solution">
+        <div class="section-container">
+            <div class="section-label">הפתרון</div>
+            <h2 class="section-title">שלוש זרועות התערבות — פרויקט לאומי אחד</h2>
+            <p class="section-subtitle">
+                שלושת מסלולי הפיילוט פועלים על אותה משוואה:
+                המרת נטל פיסקלי לנכס מערכתי.
+                כל מסלול מופעל תחת פרויקט לאומי חוצה משרדים אחוד.
+            </p>
+            <div class="model-visual">
+                <div class="model-center">
+                    <div class="model-hub">
+                        <span>המקפצה</span>
+                        <small>פרויקט בין-משרדי</small>
+                    </div>
+                </div>
+                <div class="model-channels">
+                    <div class="model-channel channel-1-color" data-channel="1">
+                        <div class="channel-icon"><i class="fas fa-store"></i></div>
+                        <h3>מסלול א׳</h3>
+                        <p>המקפצה לשוק הפרטי</p>
+                        <small>שירות התעסוקה</small>
+                    </div>
+                    <div class="model-channel channel-2-color" data-channel="2">
+                        <div class="channel-icon"><i class="fas fa-hand-holding-usd"></i></div>
+                        <h3>מסלול ב׳</h3>
+                        <p>מענק עבודה מועדפת</p>
+                        <small>ביטוח לאומי</small>
+                    </div>
+                    <div class="model-channel channel-3-color" data-channel="3">
+                        <div class="channel-icon"><i class="fas fa-brain"></i></div>
+                        <h3>מסלול ג׳</h3>
+                        <p>LibAI — עוקף ליבה</p>
+                        <small>משרד העבודה</small>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Track A: The Marketplace -->
+    <section class="channel-deep" id="channel1">
+        <div class="section-container">
+            <div class="channel-deep-header channel-1-bg">
+                <div class="channel-number">א׳</div>
+                <div class="channel-deep-info">
+                    <div class="section-label light">מסלול א׳ — באחריות שירות התעסוקה</div>
+                    <h2 class="section-title light">זירת "המקפצה" לשוק הפרטי</h2>
+                    <p class="channel-deep-desc">
+                        ארנק דיגיטלי לשדרוג מקצועי וכלי בינה מלאכותית — חזרה מהירה לשוק הפרטי תוך 6 חודשים.
+                        הכוח עובר לידיים של האישה: היא בוחרת מה היא צריכה, והתקציב הולך אחריה.
+                    </p>
+                </div>
+                <button class="accordion-toggle" data-target="accordion1" aria-expanded="true">
+                    <i class="fas fa-chevron-up"></i>
+                </button>
+            </div>
+            <div class="pilot-overview accordion-content" id="accordion1">
+                <div class="pilot-block">
+                    <div class="pilot-block-icon"><i class="fas fa-bullseye"></i></div>
+                    <h3>הבעיה: ה"שטח המת"</h3>
+                    <p>כשנשים מפוטרות ממקצועות בסיכון, הן מקבלות דמי אבטלה (רשת ביטחון פסיבית) והצעות עבודה גנריות. אין מנגנון שמנהל את תקופת המעבר ומאפשר להן לבחור כלים מותאמים אישית לצמיחה. בחודשים 1-4 ההון האנושי נשחק, הסיכוי לחזרה איכותית יורד, והמדינה ממשיכה לשלם קצבאות ללא יצירת ערך.</p>
+                </div>
+                <div class="pilot-block">
+                    <div class="pilot-block-icon"><i class="fas fa-lightbulb"></i></div>
+                    <h3>המנגנון: Opportunity Marketplace</h3>
+                    <p>פלטפורמה דיגיטלית (דרך זירת האתגרים הממשלתית) המפגישה בין המובטלת הטרייה לבין "חנות אפליקציות" של שירותי תמיכה וצמיחה. כל משתתפת מקבלת ארנק וירטואלי (וואוצ'ר) למימוש בזירה. הטריגר: רגע קבלת ההודעה מביטוח לאומי על זכאות לדמי אבטלה.</p>
+                </div>
+                <div class="pilot-block">
+                    <div class="pilot-block-icon"><i class="fas fa-users"></i></div>
+                    <h3>אוכלוסייה ותקציב</h3>
+                    <p>200 נשים שפוטרו לאחרונה ממקצועות בסיכון (מזכירות, שירות), באזור גיאוגרפי מוגדר. תקציב: 3 מיליון ₪. כל משתתפת מקבלת ארנק וירטואלי למימוש בזירה. מימון: ג׳וינט (Seed) + ביטוח לאומי (Matching).</p>
+                </div>
+                <div class="pilot-block">
+                    <div class="pilot-block-icon"><i class="fas fa-shopping-cart"></i></div>
+                    <h3>קטגוריות המענה בזירה</h3>
+                    <ul class="pilot-list">
+                        <li>חוסן מנטלי: אימון אישי, ליווי רגשי, קבוצות העצמה</li>
+                        <li>ארגז כלים טכנולוגי: מנויים לכלי AI (ChatGPT Pro, Canva), כלי ניהול זמן</li>
+                        <li>מיומנויות Micro-Skills: נטוורקינג, מיתוג אישי, הכנה לראיונות</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="kpi-bar">
+                <div class="kpi-item">
+                    <div class="kpi-value">60%+</div>
+                    <div class="kpi-label">שובצו בשכר ≥ שכר קודם</div>
+                </div>
+                <div class="kpi-item">
+                    <div class="kpi-value">70%</div>
+                    <div class="kpi-label">מימשו לפחות 50% מהוואוצ׳ר</div>
+                </div>
+                <div class="kpi-item">
+                    <div class="kpi-value">20%</div>
+                    <div class="kpi-label">קיצור משך האבטלה</div>
+                </div>
+                <div class="kpi-item">
+                    <div class="kpi-value">4.5/5</div>
+                    <div class="kpi-label">שביעות רצון מספקים</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Track B: Preferred Employment Grant -->
+    <section class="channel-deep" id="channel2">
+        <div class="section-container">
+            <div class="channel-deep-header channel-2-bg">
+                <div class="channel-number">ב׳</div>
+                <div class="channel-deep-info">
+                    <div class="section-label light">מסלול ב׳ — באחריות ביטוח לאומי</div>
+                    <h2 class="section-title light">מענק עבודה מועדפת</h2>
+                    <p class="channel-deep-desc">
+                        מענק לעבודה מועדפת והכשרה מעשית: 12-18 חודשים.
+                        שיבוץ כמכפילי כוח: תומכות עו"ס, סיעוד, מתאמות טיפול, סייעות והוראה.
+                        יוגדר כמלגה בפיילוט, אופציה למענק התמדה ללימודים.
+                    </p>
+                </div>
+                <button class="accordion-toggle" data-target="accordion2" aria-expanded="true">
+                    <i class="fas fa-chevron-up"></i>
+                </button>
+            </div>
+            <div class="pilot-overview accordion-content" id="accordion2">
+                <div class="pilot-block">
+                    <div class="pilot-block-icon"><i class="fas fa-exchange-alt"></i></div>
+                    <h3>המנגנון: מענק עבודה מועדפת</h3>
+                    <p>נשים שישתלבו בתפקידי יעד במקצועות במחסור יקבלו מענק לעבודה מועדפת והכשרה מעשית למשך 12-18 חודשים. המענק יוגדר כמלגה בפיילוט, עם אופציה למענק התמדה ללימודים. שיבוץ כמכפילי כוח בתפקידי מעטפת: תומכות עו"ס, סיעוד, מתאמות טיפול, סייעות והוראה.</p>
+                </div>
+                <div class="pilot-block">
+                    <div class="pilot-block-icon"><i class="fas fa-user-nurse"></i></div>
+                    <h3>שיבוץ כמכפילי כוח</h3>
+                    <ul class="pilot-list">
+                        <li>תומכות עו"ס — ניהול תיקים ובירוקרטיה (שחרור 4,000 שעות קליניות/שנה לכל 10 תומכות)</li>
+                        <li>סיעוד — תמיכה במערכת הבריאות</li>
+                        <li>מתאמות טיפול — תיאום מסלול קליני במערכת הבריאות</li>
+                        <li>סייעות והוראה — מיקוד הפדגוגיה למורים</li>
+                    </ul>
+                </div>
+                <div class="pilot-block">
+                    <div class="pilot-block-icon"><i class="fas fa-users"></i></div>
+                    <h3>אוכלוסייה ותקציב</h3>
+                    <p>200 נשים — תקציב: 4.5 מיליון ₪. שיבוץ כמכפילי כוח בתפקידי מעטפת במשרדי הבריאות, הרווחה והחינוך. חתימת כתבי התחייבות (SLA) מול המשרדים הרלוונטיים. מדד הצלחה: קיצור תקופת אבטלה ב-30% לעומת קבוצת ביקורת.</p>
+                </div>
+                <div class="pilot-block">
+                    <div class="pilot-block-icon"><i class="fas fa-shield-alt"></i></div>
+                    <h3>מנגנוני הגנה ומבנה המענק</h3>
+                    <ul class="pilot-list">
+                        <li>המענק יוגדר כמלגה בפיילוט</li>
+                        <li>אופציה למענק התמדה ללימודים</li>
+                        <li>מגזר ציבורי בלבד — אפס Substitution Effect</li>
+                        <li>Headcount חדש בלבד — אסור להחליף תקן קיים</li>
+                        <li>זכאות רק בחלון 1-4 חודשי אבטלה</li>
+                        <li>מענק מוגבל זמן: 12-18 חודשים בלבד</li>
+                        <li>תשלום דרך Escrow לפי תוצאה מאומתת</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="kpi-bar kpi-bar-2">
+                <div class="kpi-item">
+                    <div class="kpi-value">30%</div>
+                    <div class="kpi-label">קיצור תקופת אבטלה לעומת קבוצת ביקורת</div>
+                </div>
+                <div class="kpi-item">
+                    <div class="kpi-value">200</div>
+                    <div class="kpi-label">נשים משובצות כמכפילי כוח</div>
+                </div>
+                <div class="kpi-item">
+                    <div class="kpi-value">4.5M ₪</div>
+                    <div class="kpi-label">תקציב מסלול</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Track C: LibAI -->
+    <section class="channel-deep" id="channel3">
+        <div class="section-container">
+            <div class="channel-deep-header channel-3-bg">
+                <div class="channel-number">ג׳</div>
+                <div class="channel-deep-info">
+                    <div class="section-label light">מסלול ג׳ — באחריות משרד העבודה וג׳וינט-תבת</div>
+                    <h2 class="section-title light">LibAI — מסלול עוקף ליבה למגזר החרדי</h2>
+                    <p class="channel-deep-desc">
+                        שימוש בכלי AI כ"פרוטזות קוגניטיביות" המאפשרות לגברים חרדים
+                        (בעלי חשיבה לוגית אך ללא אנגלית/מתמטיקה) לבצע תפקידים טכנולוגיים.
+                        בוטקאמפ 6 חודשים + התמחות מעשית.
+                    </p>
+                </div>
+                <button class="accordion-toggle" data-target="accordion3" aria-expanded="true">
+                    <i class="fas fa-chevron-up"></i>
+                </button>
+            </div>
+            <div class="pilot-overview accordion-content" id="accordion3">
+                <div class="pilot-block">
+                    <div class="pilot-block-icon"><i class="fas fa-puzzle-piece"></i></div>
+                    <h3>הבעיה: פריון נמוך ושכר קפוא</h3>
+                    <p>שיעור תעסוקת גברים חרדים עומד על 54% בלבד — קפוא, בשכר נמוך מהממוצע. חסמי שפה (אנגלית) ומתמטיקה חוסמים כניסה למקצועות טכנולוגיים מבוקשים, למרות חשיבה לוגית חזקה. כלי AI יכולים לשמש כגשר על חסמים אלו.</p>
+                </div>
+                <div class="pilot-block">
+                    <div class="pilot-block-icon"><i class="fas fa-robot"></i></div>
+                    <h3>המנגנון: מכללה למיומנויות העולם החדש</h3>
+                    <p>הכשרה מהירה: בוטקאמפ 6 חודשים + התמחות מעשית. שימוש בכלי AI כ"פרוטזות קוגניטיביות" — כלים שמאפשרים לבצע תפקידים טכנולוגיים כגון הטמעת אוטומציות ואנליסטים, ללא צורך בלימודי ליבה קלאסיים. חתימה מול חברות עוגן בהר חוצבים.</p>
+                </div>
+                <div class="pilot-block">
+                    <div class="pilot-block-icon"><i class="fas fa-users"></i></div>
+                    <h3>אוכלוסייה ותקציב</h3>
+                    <p>25 גברים חרדים — תקציב: 2 מיליון ₪ (הכשרה, דמי קיום ופיתוח כלים). מסלול ממוקד ומבוקר שנועד להוכיח היתכנות כלכלית ומערכתית לפני הרחבה.</p>
+                </div>
+                <div class="pilot-block">
+                    <div class="pilot-block-icon"><i class="fas fa-graduation-cap"></i></div>
+                    <h3>תפקידי יעד</h3>
+                    <ul class="pilot-list">
+                        <li>הטמעת אוטומציות בארגונים</li>
+                        <li>אנליסטים — ניתוח נתונים בעזרת כלי AI</li>
+                        <li>תפקידים טכנולוגיים שדורשים חשיבה לוגית ולא בהכרח אנגלית</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="kpi-bar kpi-bar-3">
+                <div class="kpi-item">
+                    <div class="kpi-value">1:2.5</div>
+                    <div class="kpi-label">תשואה בשנה הראשונה לכל בוגר</div>
+                </div>
+                <div class="kpi-item">
+                    <div class="kpi-value">6</div>
+                    <div class="kpi-label">חודשי בוטקאמפ + התמחות</div>
+                </div>
+                <div class="kpi-item">
+                    <div class="kpi-value">25</div>
+                    <div class="kpi-label">משתתפים בפיילוט</div>
+                </div>
+                <div class="kpi-item">
+                    <div class="kpi-value">2M ₪</div>
+                    <div class="kpi-label">תקציב מסלול</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Budget Framework -->
+    <section class="impact-section" id="budget">
+        <div class="section-container">
+            <div class="section-label">מסגרת תקציבית</div>
+            <h2 class="section-title">תקציב הפיילוט — 10 מיליון ₪</h2>
+            <p class="section-subtitle" style="color: var(--gray-3);">
+                התקציב נבנה כדי לאפשר הוכחת מודל (MVP) בסביבה מבוקרת,
+                בטרם דרישה לשינוי חקיקה או הסטת תקציבי עתק
+            </p>
+            <div class="budget-visual reveal">
+                <div class="budget-donut"></div>
+                <div class="budget-legend">
+                    <div class="budget-legend-item">
+                        <span class="budget-legend-dot" style="background: var(--channel-1);"></span>
+                        מסלול א׳ — שוק פרטי <strong>3M ₪</strong>
+                    </div>
+                    <div class="budget-legend-item">
+                        <span class="budget-legend-dot" style="background: var(--channel-2);"></span>
+                        מסלול ב׳ — עבודה מועדפת <strong>4.5M ₪</strong>
+                    </div>
+                    <div class="budget-legend-item">
+                        <span class="budget-legend-dot" style="background: var(--channel-3);"></span>
+                        מסלול ג׳ — LibAI <strong>2M ₪</strong>
+                    </div>
+                    <div class="budget-legend-item">
+                        <span class="budget-legend-dot" style="background: var(--gold);"></span>
+                        פרויקט לאומי חוצה משרדים <strong>0.5M ₪</strong>
+                    </div>
+                </div>
+            </div>
+            <div class="budget-grid">
+                <div class="budget-card">
+                    <div class="budget-card-header channel-1-bg">
+                        <h3>מסלול א׳</h3>
+                        <span>200 נשים</span>
+                    </div>
+                    <div class="budget-card-body">
+                        <div class="budget-amount">3.0</div>
+                        <div class="budget-unit">מיליון ₪</div>
+                        <p>וואוצ׳רים והשמה בשוק הפרטי</p>
+                    </div>
+                </div>
+                <div class="budget-card">
+                    <div class="budget-card-header channel-2-bg">
+                        <h3>מסלול ב׳</h3>
+                        <span>200 נשים</span>
+                    </div>
+                    <div class="budget-card-body">
+                        <div class="budget-amount">4.5</div>
+                        <div class="budget-unit">מיליון ₪</div>
+                        <p>מענקי עבודה מועדפת</p>
+                    </div>
+                </div>
+                <div class="budget-card">
+                    <div class="budget-card-header channel-3-bg">
+                        <h3>מסלול ג׳</h3>
+                        <span>25 גברים</span>
+                    </div>
+                    <div class="budget-card-body">
+                        <div class="budget-amount">2.0</div>
+                        <div class="budget-unit">מיליון ₪</div>
+                        <p>הכשרה, דמי קיום ופיתוח כלים</p>
+                    </div>
+                </div>
+                <div class="budget-card">
+                    <div class="budget-card-header" style="background: linear-gradient(135deg, #92400E, #D97706, #F59E0B);">
+                        <h3>פרויקט לאומי</h3>
+                        <span>חוצה משרדים</span>
+                    </div>
+                    <div class="budget-card-body">
+                        <div class="budget-amount">0.5</div>
+                        <div class="budget-unit">מיליון ₪</div>
+                        <p>ניהול, תיאום ומדידה</p>
+                    </div>
+                </div>
+            </div>
+            <div class="budget-total">
+                <span>סך הכל דרישה תקציבית:</span>
+                <strong>10 מיליון ₪</strong>
+            </div>
+        </div>
+    </section>
+
+    <!-- Timeline -->
+    <section class="roi-section" id="timeline">
+        <div class="section-container">
+            <div class="section-label">לוח זמנים</div>
+            <h2 class="section-title">אבני דרך תפעוליות</h2>
+            <div class="timeline-grid">
+                <div class="timeline-card">
+                    <div class="timeline-month">חודש 1</div>
+                    <h3>התנעה מוסדית</h3>
+                    <ul class="pilot-list">
+                        <li>גיוס פרויקטור לאומי</li>
+                        <li>כינוס ועדת היגוי</li>
+                        <li>אישור תקציבים</li>
+                    </ul>
+                </div>
+                <div class="timeline-card">
+                    <div class="timeline-month">חודשים 2-3</div>
+                    <h3>רכש ושותפויות</h3>
+                    <ul class="pilot-list">
+                        <li>פרסום קול קורא בזירת האתגרים (מסלול א׳)</li>
+                        <li>חתימת SLA מול משרדי ממשלה (מסלול ב׳)</li>
+                        <li>חתימה מול חברות עוגן בהר חוצבים (מסלול ג׳)</li>
+                    </ul>
+                </div>
+                <div class="timeline-card">
+                    <div class="timeline-month">חודשים 4-5</div>
+                    <h3>גיוס והכשרה</h3>
+                    <ul class="pilot-list">
+                        <li>חלוקת ארנקים דיגיטליים (מסלול א׳)</li>
+                        <li>שילוב מיידי OJT במקצועות מחסור (מסלול ב׳)</li>
+                        <li>פתיחת בוטקאמפ (מסלול ג׳)</li>
+                    </ul>
+                </div>
+                <div class="timeline-card">
+                    <div class="timeline-month">חודשים 6-18</div>
+                    <h3>הרצה, מדידה ו-Scale-Up</h3>
+                    <ul class="pilot-list">
+                        <li>ליווי משתתפים, איסוף נתוני שכר ושרידות</li>
+                        <li>הצגת ROI לאגף התקציבים</li>
+                        <li>דרישה לתיקון חקיקה לשימוש קבוע בכספי דמי אבטלה</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Partners -->
+    <section class="partners-section" id="partners">
+        <div class="section-container">
+            <div class="section-label">שותפים</div>
+            <h2 class="section-title">ארכיטקטורת השותפויות</h2>
+            <p class="partners-subtitle">7 גופים ממשלתיים ואזרחיים — מסגרת שיתוף פעולה ייחודית</p>
+            <div class="partners-logo-wall">
+
+                <div class="partner-logo-card" data-color="#0057A8">
+                    <div class="partner-logo-badge" style="background:#0057A8;">
+                        <span class="partner-initials">ב״ל</span>
+                    </div>
+                    <div class="partner-info">
+                        <h4>ביטוח לאומי</h4>
+                        <span>מוביל מסלול ב׳ — בעל הדאטה והטריגר</span>
+                    </div>
+                </div>
+
+                <div class="partner-logo-card" data-color="#2D7D46">
+                    <div class="partner-logo-badge" style="background:#2D7D46;">
+                        <span class="partner-initials">ש.ת.</span>
+                    </div>
+                    <div class="partner-info">
+                        <h4>שירות התעסוקה</h4>
+                        <span>מוביל מסלול א׳ — חיבור לשטח</span>
+                    </div>
+                </div>
+
+                <div class="partner-logo-card" data-color="#1A3A6B">
+                    <div class="partner-logo-badge" style="background:#1A3A6B;">
+                        <span class="partner-initials">מ.ע.</span>
+                    </div>
+                    <div class="partner-info">
+                        <h4>משרד העבודה</h4>
+                        <span>מוביל מסלול ג׳ — LibAI</span>
+                    </div>
+                </div>
+
+                <div class="partner-logo-card" data-color="#C0392B">
+                    <div class="partner-logo-badge" style="background:#C0392B;">
+                        <span class="partner-initials">תבת</span>
+                    </div>
+                    <div class="partner-info">
+                        <h4>ג׳וינט-תבת</h4>
+                        <span>מימון Seed + ליווי מחקרי</span>
+                    </div>
+                </div>
+
+                <div class="partner-logo-card" data-color="#6B21A8">
+                    <div class="partner-logo-badge" style="background:#6B21A8;">
+                        <span class="partner-initials">מד״ל</span>
+                    </div>
+                    <div class="partner-info">
+                        <h4>מערך הדיגיטל הלאומי</h4>
+                        <span>תשתית טכנולוגית ורגולציה דיגיטלית</span>
+                    </div>
+                </div>
+
+                <div class="partner-logo-card" data-color="#005C3A">
+                    <div class="partner-logo-badge" style="background:#005C3A;">
+                        <span class="partner-initials">אוצר</span>
+                    </div>
+                    <div class="partner-info">
+                        <h4>משרד האוצר</h4>
+                        <span>אישור מסגרת פיסקלית ותקציב פיילוט</span>
+                    </div>
+                </div>
+
+                <div class="partner-logo-card" data-color="#E67E22">
+                    <div class="partner-logo-badge" style="background:#E67E22;">
+                        <span class="partner-initials">מוז׳</span>
+                    </div>
+                    <div class="partner-info">
+                        <h4>מכון מוזיאייק</h4>
+                        <span>ידע מחקרי ומדידת אימפקט</span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA: Decision Required -->
+    <section class="cta-section" id="cta">
+        <div class="section-container">
+            <div class="cta-content">
+                <h2>החלטות נדרשות מוועדת ההיגוי</h2>
+                <div class="cta-items">
+                    <div class="cta-item">
+                        <div class="cta-number">1</div>
+                        <div class="cta-text">
+                            <h3>אישור מסגרת שלושת המסלולים</h3>
+                            <p>אישור הפיילוט הדו-מסלולי + מסלול ג׳ — כמסגרת בדיקת מדיניות מקבילה, בהיקף מבוקר של 10 מיליון ₪</p>
+                        </div>
+                    </div>
+                    <div class="cta-item">
+                        <div class="cta-number">2</div>
+                        <div class="cta-text">
+                            <h3>מינוי פרויקטור לאומי וצוות היגוי</h3>
+                            <p>גיוס פרויקטור 100% משרה שינווט את הפעילות מול הרגולטורים, משרדי הממשלה והספקים — והסמכת צוות ל-30 הימים הראשונים</p>
+                        </div>
+                    </div>
+                    <div class="cta-item">
+                        <div class="cta-number">3</div>
+                        <div class="cta-text">
+                            <h3>אישור עקרוני לתקציבי הפיילוט</h3>
+                            <p>נכונות עקרונית להשתתפות במימון (Matching), בכפוף לאישור תקציבי ומשפטי. מדד הצלחה פיסקלי בחודש 6: GO/NO-GO להרחבה</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="cta-quote">
+                    "המקפצה היא מהלך ניסיוני, מבוקר ומדיד — מעבר זהיר מתפקיד של משלם פסיבי לגורם שמקטין אבטלה עתידית, תוך שימוש בכלי החדשנות הממשלתיים ובסיכון מינימלי."
+                </div>
+                <div class="urgency-section">
+                    <div class="urgency-label"><i class="fas fa-clock"></i> חלון ההזדמנות הקריטי: חודשים 1-4 מרגע הפיטורים</div>
+                    <div class="urgency-bar-track">
+                        <div class="urgency-bar-fill"></div>
+                        <div class="urgency-marker"></div>
+                    </div>
+                    <div class="urgency-labels">
+                        <span>חודש 1 — התערבות אופטימלית</span>
+                        <span class="current">← אנחנו כאן</span>
+                        <span>חודש 4+ — שחיקה בלתי הפיכה</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-logo">המקפצה</div>
+        <p>אסטרטגיה לאומית לתעסוקה בעידן החדש</p>
+        <p class="footer-date">פורום "תעסוקה בעולם החדש" | ועדת "אוכלוסיות בסיכון" | סיווג: לדיון בוועדת ההיגוי בלבד</p>
+        <p class="footer-credit">© אביעד יצחקי</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
